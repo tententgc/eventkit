@@ -1,0 +1,11 @@
+import React from 'react'; 
+
+function scoreboard() {
+    return (
+        <div>
+            <h1>Scoreboard</h1>
+        </div> 
+    )
+} 
+
+export default scoreboard ; 

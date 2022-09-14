@@ -4,12 +4,12 @@ function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-300 mb-3 ">
+      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-orange-100 mb-3 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-slate-900"
-              href="#pablo"
+              href="/"
             >
               ACS-Knowledge camp 2022
             </a>
@@ -32,7 +32,7 @@ function Navbar() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
-                  href="#Vote"
+                  href="/Vote"
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-slate-900 opacity-75"></i>
                   <span className="ml-2">Vote</span>
@@ -41,25 +41,19 @@ function Navbar() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
-                  href="#scorboard"
+                  href="/scoreboard"
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-slate-900 opacity-75"></i>
                   <span className="ml-2">Scoreboard</span>
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
-                  href="#contact"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg text-slate-900 opacity-75"></i>
-                  <span className="ml-2">Contact</span>
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>
       </nav>
+
+      
     </>
   );
 }
