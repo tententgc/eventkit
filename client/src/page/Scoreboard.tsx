@@ -1,9 +1,9 @@
 import React from 'react'; 
-
+import Table from "../components/Table.jsx";
 function scoreboard() {
     return (
         <div className="App font-bold text-xl">
-            <h1>Scoreboard</h1>
+            <Table />
         </div> 
     )
 } 
