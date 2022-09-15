@@ -9,10 +9,16 @@ import (
 
 	"backend/loaders/memory"
 	"backend/types/payload"
+	"backend/utils/config"
 	"backend/utils/text"
 )
 
 func PatchInfoHandler(c *fiber.Ctx) error {
+	// Verify secret
+	if c.Get("x-secret") != config.C.Secret {
+		return c.Status(fiber.StatusUnauthorized).SendString("401_UNAUTHORIZED")
+	}
+
 	// Parse body
 	var body []*payload.LeaderboardItem
 	if err := c.BodyParser(&body); err != nil {
@@ -28,7 +34,7 @@ func PatchInfoHandler(c *fiber.Ctx) error {
 
 	// Sort leaderboard score
 	sort.Slice(body, func(i, j int) bool {
-		return *body[i].Score < *body[j].Score
+		return *body[i].Score > *body[j].Score
 	})
 
 	// Update leaderboard
