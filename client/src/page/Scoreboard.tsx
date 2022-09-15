@@ -2,7 +2,7 @@ import React from 'react';
 
 function scoreboard() {
     return (
-        <div>
+        <div className="App font-bold text-xl">
             <h1>Scoreboard</h1>
         </div> 
     )
