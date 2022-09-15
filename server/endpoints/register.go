@@ -9,4 +9,5 @@ import (
 func Register(router fiber.Router) {
 	leaderboard := router.Group("leaderboard/")
 	leaderboard.Get("info", leaderboardEndpoint.GetInfoHandler)
+	leaderboard.Patch("info", leaderboardEndpoint.PatchInfoHandler)
 }

@@ -1,6 +1,0 @@
-environment: 1
-log_level: 6
-address: :8081
-cors:
-  - http://localhost:3000
-  - https://acscamp.tententgc.com
