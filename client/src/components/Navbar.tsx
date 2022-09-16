@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-orange-100 mb-3 ">
+      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-zinc-300 mb-3 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -34,7 +33,7 @@ function Navbar() {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
                   href="/Vote"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-slate-900 opacity-75"></i>
+                  <i className="fab  text-lg leading-lg text-slate-900 opacity-75"></i>
                   <span className="ml-2">Vote</span>
                 </a>
               </li>
@@ -43,7 +42,7 @@ function Navbar() {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
                   href="/scoreboard"
                 >
-                  <i className="fab fa-twitter text-lg leading-lg text-slate-900 opacity-75"></i>
+                  <i className="fab  text-lg leading-lg text-slate-900 opacity-75"></i>
                   <span className="ml-2">Scoreboard</span>
                 </a>
               </li>
