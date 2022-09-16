@@ -1,13 +1,16 @@
 import React from "react";
+
+
+// Create Responsive Navbar with React and Tailwind CSS
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-zinc-300 mb-3 ">
+      <nav className="font-sans relative flex flex-wrap items-center justify-between px-2 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-3 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-slate-900"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
               href="/"
             >
               ACS-Knowledge camp 2022
@@ -46,13 +49,10 @@ function Navbar() {
                   <span className="ml-2">Scoreboard</span>
                 </a>
               </li>
-              
             </ul>
           </div>
         </div>
       </nav>
-
-      
     </>
   );
 }
