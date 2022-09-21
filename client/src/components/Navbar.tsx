@@ -6,53 +6,70 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <h1 className="text-slate-800 font-bold">EVENT KIT</h1>
-              </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="/Home"
-                    className=" text-slate-600 hover:bg-gray-700 hover:text-white  px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Home
-                  </a>
+      <nav className="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 border-gray-500  dark:bg-gray-900">
+        <div className="px-2 sm:px-4 py-2.5 rounded ">
+          <div className="container flex flex-wrap justify-between items-center mx-auto h-14">
+            <div className="flex-shrink-0">
+              <h1 className="self-center text-xl font-semibold whitespace-nowrap dark:text-white mb-2">
+                EVENT KIT
+              </h1>
+            </div>
 
-                  <a
-                    href="/team"
-                    className="text-slate-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Team
-                  </a>
+            <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1">
+              <div className="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+                <a
+                  href="/Home"
+                  className=" text-slate-600 hover:font-bold hover:text-slate-900 hover:underline  px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Home
+                </a>
 
-                  <a
-                    href="tools"
-                    className="text-slate-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Tools
-                  </a>
+                <a
+                  href="/team"
+                  className="text-slate-600 hover:font-bold hover:text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Team
+                </a>
 
-                  <a
-                    href="/calendar"
-                    className="text-slate-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Calendar
-                  </a>
+                <a
+                  href="tools"
+                  className="text-slate-600hover:font-bold hover:text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Tools
+                </a>
 
-                  <a
-                    href="/contact"
-                    className="text-slate-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                <a
+                  href="/calendar"
+                  className="text-slate-600 hover:font-bold hover:text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Calendar
+                </a>
+
+                <a
+                  href="/contact"
+                  className="text-slate-600 hover:font-bold hover:text-slate-900 hover:underline px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Contact
+                </a>
+                <a href="/login">
+                  <button
+                    type="button"
+                    className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
-                    Contact
-                  </a>
-                </div>
+                    Sign in
+                  </button>
+                </a>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
+              <a href="/login">
+                <button
+                  type="button"
+                  className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2 text-center mr-5 mb-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Sign in
+                </button>
+              </a>
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"

@@ -9,15 +9,17 @@ import Scoreboard from "./pages/Scoreboard";
 import Contact from "./pages/Contact";
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Vote" element={<Vote />} />
-        <Route path="/scoreboard" element={<Scoreboard />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Vote" element={<Vote />} />
+          <Route path="/scoreboard" element={<Scoreboard />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
