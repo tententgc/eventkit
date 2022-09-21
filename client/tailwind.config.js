@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,tsx,jsx}"],
+  content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}"], 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sukhum: ["sukhumvitset", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
