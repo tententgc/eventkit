@@ -1,26 +1,21 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import "./styles/index.css"; 
+import Home from "./pages/Home"; 
+import Tools from "./pages/Tools"; 
+import Contact from "./pages/Contact"; 
 
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Vote from "./pages/Vote";
-import Scoreboard from "./pages/Scoreboard";
-import Contact from "./pages/Contact";
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Vote" element={<Vote />} />
-          <Route path="/scoreboard" element={<Scoreboard />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+    <div> 
+        <Routes> 
+            <Route path="/" element={<Home />} />
+            <Route path="/tools" element={<Tools />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes> 
+
     </div>
   );
-}
+};
 
 export default App;
